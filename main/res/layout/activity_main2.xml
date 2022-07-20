@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <Button
+        android:id="@+id/allBooksButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="All books"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/currentlyReadingButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="currently reading"
+        app:layout_constraintEnd_toEndOf="@+id/allBooksButton"
+        app:layout_constraintStart_toStartOf="@+id/allBooksButton"
+        app:layout_constraintTop_toBottomOf="@+id/allBooksButton" />
+
+    <Button
+        android:id="@+id/finishedBooksButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Finished books"
+        app:layout_constraintEnd_toEndOf="@+id/currentlyReadingButton"
+        app:layout_constraintStart_toStartOf="@+id/currentlyReadingButton"
+        app:layout_constraintTop_toBottomOf="@+id/currentlyReadingButton" />
+
+    <Button
+        android:id="@+id/myFavoritesButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="My favorites"
+        app:layout_constraintEnd_toEndOf="@+id/finishedBooksButton"
+        app:layout_constraintStart_toStartOf="@+id/finishedBooksButton"
+        app:layout_constraintTop_toBottomOf="@+id/finishedBooksButton" />
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="about"
+        app:layout_constraintEnd_toEndOf="@+id/myFavoritesButton"
+        app:layout_constraintStart_toStartOf="@+id/myFavoritesButton"
+        app:layout_constraintTop_toBottomOf="@+id/myFavoritesButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
